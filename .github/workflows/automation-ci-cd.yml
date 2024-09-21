@@ -36,7 +36,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
 
       - name: Set up ChromeDriver
-        uses: nanasess/setup-chromedriver@v1
+        uses: nanasess/setup-chromedriver@v2
 
       - name: Install Maven dependencies
         run: mvn install --no-transfer-progress --batch-mode
