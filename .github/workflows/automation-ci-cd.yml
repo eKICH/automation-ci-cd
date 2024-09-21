@@ -36,10 +36,12 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
 
       - name: Set up Chrome Browser
-        run: sudo apt-get update sudo apt-get install -y google-chrome-stable
+        run: sudo apt-get update 
+            sudo apt-get install -y google-chrome-stable
 
       - name: Set up ChromeDriver
-        run: sudo apt-get update sudo apt-get install -y chromium-chromedriver
+        run: sudo apt-get update 
+            sudo apt-get install -y chromium-chromedriver
 
       - name: Install Maven dependencies
         run: mvn install --no-transfer-progress --batch-mode
